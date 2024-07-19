@@ -22,22 +22,22 @@ func main() {
 	of size 10 and returns a slice of length 0 and capacity 10 that is
 	backed by this underlying array.
 	*/
-	fmt.Println("Is nil:",nums2 == nil) 			// * O/P :- false
-	fmt.Println("Array values:",nums2) 				// * O/P :- []
-	fmt.Println("Capacity",cap(nums2)) 				// * O/P :- 2 (cap -> max number in elements can fit)
+	fmt.Println("Is nil:",nums2 == nil) 	// * O/P :- false
+	fmt.Println("Array values:",nums2) 		// * O/P :- []
+	fmt.Println("Capacity",cap(nums2)) 		// * O/P :- 2 (cap -> max number in elements can fit)
 
 
 	//? Initalizing value to arrays
 	nums2 = append(nums2, 1)
 	nums2 = append(nums2, 2)
 	nums2 = append(nums2, 3)
-	fmt.Println("Array values:",nums2)      // * O/P :-  [1 2 3]
-	fmt.Println("Length:",len(nums2)) 			// * O/P :-  5
-	fmt.Println("Capacity",cap(nums2)) 			// * O/P :-  8
+	fmt.Println("Array values:",nums2)    // * O/P :-  [1 2 3]
+	fmt.Println("Length:",len(nums2)) 		// * O/P :-  5
+	fmt.Println("Capacity",cap(nums2)) 		// * O/P :-  8
 
 	//? short-hand 
 	nums3 := []int{}
-	fmt.Println(nums3)											// * O/P :- []
+	fmt.Println(nums3)	// * O/P :- []
 
 	var nums4 = make([]int,0,5)
 	nums4 = append(nums4, 2)
@@ -45,7 +45,7 @@ func main() {
 
 	//? Copy function: copy(dest,src)
 	copy(nums5,nums4)
-	fmt.Println(nums4,nums5)							// * O/P :- [2] [2]
+	fmt.Println(nums4,nums5) // * O/P :- [2] [2]
 
 	//? Slice Operator
 
@@ -62,7 +62,7 @@ func main() {
 
 	fmt.Println("Slice Methods:",slices.Equal(nums7,nums8))
 	/* 
-		slice.Equal = two slices are equal: the same length and all elements equal, Equal returns false. 
+		slice.Equal = two slices are equal: the same length and all elements equal, Equal returns true. 
 		If the lengths are different, Equal returns false.
 	*/
 
