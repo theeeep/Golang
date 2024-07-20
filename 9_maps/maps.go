@@ -6,12 +6,12 @@ import (
 )
 
 /*
-	 Maps --> Key:Value
-		Syntax :- map[key Dtype] value Dtype
-					ex:- m := make(map[string]string)
+Maps --> Key:Value
+Syntax :- map[key Dtype] value Dtype
+ex:- m := make(map[string]string)
 
-		if a map is empty and its value data type value will be
-				if string -> empty value, int --> 0, boolean --> false
+if a map is empty and its value data type value will be
+if string -> empty value, int --> 0, boolean --> false
 */
 func main() {
 	// Declaration Map
